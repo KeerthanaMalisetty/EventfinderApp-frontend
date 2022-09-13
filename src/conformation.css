@@ -1,0 +1,35 @@
+.confirmimg {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 1.5cm;
+    margin-left: 14cm;
+}
+
+.confirmctr {
+    /* width: 700px; */
+    height: fitcontent;
+
+}
+
+.confirmtext {
+    font-size: 20px;
+    margin-left: 12cm;
+}
+
+.confirmevent {
+    color: rgb(137, 90, 180);
+    font-style: italic;
+}
+
+.confirmbtn {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    height: 38px;
+    width: 140px;
+    margin-left: 14.5cm;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(138, 98, 175);
+}

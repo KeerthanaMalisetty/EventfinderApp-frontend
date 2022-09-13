@@ -1,0 +1,198 @@
+.billing-bookcard {
+    width: 340px;
+    height: 500px;
+    background-color: white;
+    /* border: 1px solid rgb(61, 59, 59); */
+    margin: 510px;
+    margin-left: 13cm;
+    margin-top: 1.5cm;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px rgb(218, 218, 218);
+
+}
+
+.billing-top {
+    width: 90%;
+    height: 35%;
+    /* background: color #343434; */
+    border: 1px solid black;
+    margin-top: 1cm;
+    margin: 0;
+    margin-left: 0.4cm;
+    position: relative;
+    top: 20px;
+
+}
+
+.billing-name-evt {
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.billing-line1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+.billing-price {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 1.5cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-ticket {
+    color: rgb(124, 115, 115);
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 25px;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.billing-tkt-time {
+    color: black;
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-tkt-place {
+    color: black;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-hr {
+    background-color: rgb(51, 48, 48);
+    width: 90%;
+    height: 2px;
+    margin-left: 0.4cm;
+    margin-top: 0.3cm;
+    border: none;
+}
+
+.billing-entry {
+    color: black;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.billing-amount-ctr {
+    width: 100%;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.billing-amt {
+    color: black;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-amt1 {
+    color: rgb(66, 65, 65);
+    margin: 0;
+    font-size: 14px;
+    margin-left: 0.13cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-amt2 {
+    color: rgb(68, 67, 67);
+    margin: 0;
+    font-size: 14px;
+    margin-left: 1.25cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-sub {
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 2.9cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-sub1 {
+    color: rgb(56, 56, 56);
+    margin: 0;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 2.4cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-tot {
+    color: black;
+    margin: 0;
+    font-size: 20px;
+    margin-left: 35px;
+    margin-right: 1.8cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-sub2 {
+    color: rgb(58, 58, 58);
+    margin: 0;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 2.4cm;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-tax-ctr {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 0px;
+}
+
+.billing-total-ctr {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    /* background-color: #564cb7; */
+    flex-direction: row;
+    margin: 0;
+    /* margin-top: 15px; */
+}
+
+.billing-tickets {
+    width: 35%;
+    height: 35px;
+    background-color: rgb(139, 93, 182);
+    color: white;
+    margin-left: 2.7cm;
+    margin-top: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+}
+
+.billing-tickets>a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}

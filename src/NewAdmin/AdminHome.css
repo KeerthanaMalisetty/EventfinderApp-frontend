@@ -1,0 +1,73 @@
+.adminloginform {
+    /* background-color: rgb(75, 71, 71); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* top: 30px; */
+    gap: 15px;
+    padding: 35px 25px 0px 25px;
+    height: fit-content;
+    margin: 0;
+}
+
+.adminformctr {
+    background-color: white;
+    width: 28rem;
+    margin-left: 30rem;
+    /* display: flex;
+    flex-direction: column;
+    gap: 15px; */
+    height: 23rem;
+    margin-top: 8rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.frgtpwd {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 15rem;
+}
+
+.adminlgnbtn {
+    height: 2rem;
+    width: 9rem;
+    font-size: 15px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 7rem;
+    padding: 0;
+}
+
+.loginhd {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 15px;
+    font-size: 28px;
+    margin-left: 13rem;
+}
+
+.noaccount {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 8rem;
+
+}
+
+.createbtn {
+    background-color: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.passwordfield {
+    color: black;
+}

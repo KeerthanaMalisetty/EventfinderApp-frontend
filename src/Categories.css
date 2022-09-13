@@ -1,0 +1,31 @@
+.categoriesctr {
+    display: flex;
+    flex-direction: column;
+    width: 8cm;
+    border: 1px solid rgb(163, 163, 163);
+    height: 15cm;
+    overflow: hidden;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 1cm;
+    gap: 20px;
+    padding: 0;
+}
+
+.catbutton {
+    width: 4cm;
+    height: 45px;
+
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(90deg, #564cb7, #6443af, #7039a6, #7a2e9d, #822092);
+    border: none;
+    margin-bottom: 0;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-left: 2.5rem;
+}

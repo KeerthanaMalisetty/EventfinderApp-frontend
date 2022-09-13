@@ -1,0 +1,39 @@
+.usertable {
+    height: fit-content;
+    margin-top: 3rem;
+    margin-left: 8rem;
+    color: rgb(10, 10, 10);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+
+.deleteicon {
+    margin-left: 20px;
+}
+
+tr {
+    width: 20rem;
+    height: 60px;
+}
+
+th {
+    background-color: rgb(160, 112, 204);
+    color: aliceblue;
+    border: none;
+}
+
+td {
+    border: 0;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.usersname,
+.userid {
+    width: 15rem;
+}
+
+.useremail {
+    width: 20rem;
+}

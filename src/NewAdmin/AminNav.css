@@ -1,0 +1,59 @@
+.adminnav {
+    height: 4rem;
+    background-color: rgb(146, 83, 204);
+    display: flex;
+    flex-direction: row;
+}
+
+.adminlogin {
+    margin-left: 21cm;
+    width: 12rem;
+    height: 1.6rem;
+    background: none;
+    background-color: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    color: white;
+    font-size: 28px;
+    margin-left: 2rem;
+
+}
+
+.adhead {
+    color: white;
+    margin: 20% auto;
+    margin-left: 20rem;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.adminname {
+    background: none;
+    color: white;
+    margin-left: 40em;
+    width: 6rem;
+    height: 1.6rem;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.adminlogout {
+    width: 6rem;
+    height: 1.6rem;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+    border-radius: 8px;
+}

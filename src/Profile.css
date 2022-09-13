@@ -1,0 +1,84 @@
+.userdetailsctr {
+    background-image: linear-gradient(90deg, #564cb7, #6443af, #7039a6, #7a2e9d, #822092);
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgb(204, 201, 201, 0.5);
+}
+
+.usedetailsctr {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    height: 6rem;
+    margin: 0;
+    margin-left: 25rem;
+}
+
+.buttonsctr {
+    height: 3rem;
+    background-color: aliceblue;
+}
+
+.logoutbt {
+    width: 75px;
+    height: 30px;
+    margin-top: 2.2rem;
+    margin-left: 2rem;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.buttonscontainer {
+    /* background-color: aquamarine; */
+    width: fit-content;
+    margin-left: 10cm;
+    position: relative;
+    top: 1.4rem;
+}
+
+.profilebtns {
+    border: none;
+    outline: none;
+    width: 7rem;
+    background: none;
+    font-size: 17px;
+    margin-right: 30px;
+    letter-spacing: 1px;
+
+}
+
+.highlightbtn {
+    background-color: rgb(133, 118, 218);
+    color: white;
+}
+
+.booktkt {
+    width: 30rem;
+    height: 15rem;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 10px;
+    margin-left: 25rem;
+    margin-top: 20px;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 0cm;
+    margin: 0;
+    /* margin-left: 14cm; */
+    margin-top: 5px;
+}
+
+.useremail {
+    font-size: 18px;
+    margin-top: 0;
+    color: white;
+    /* /* margin-left: 14cm; */
+}

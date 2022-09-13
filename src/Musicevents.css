@@ -1,0 +1,46 @@
+
+
+
+
+.ctr{
+    width: 100%;
+      height: 200px;
+      margin: 0;
+      background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzC6-k8CDroyJpJ5To14D6FrtKlQH0JtIwzxt1EmD3SaruzR5zTtmFvTi2NfIZdLhhnw&usqp=CAU") rgb(22, 22, 22);
+      background-size: cover;
+      background-position: center; 
+      background-position-y:center ;
+      background-blend-mode:soft-light;
+  }
+  
+  .captions{
+    padding: 0px;
+    padding-left: 4rem;
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  
+  
+  .heading{
+    margin: 0px;
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    /* width: 30%; */
+    font-family: 'poppins',sans-serif;
+  padding-top: 35px;
+  padding-left: 4rem;
+  
+  }
+  .musicevents-ctr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  

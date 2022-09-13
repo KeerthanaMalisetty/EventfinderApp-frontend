@@ -1,0 +1,271 @@
+.wrapper {
+    display: grid;
+    grid-auto-columns: 4cm;
+    row-gap: 20px;
+    grid-auto-rows: 3cm;
+    max-width: 1400px;
+    column-gap: 3px;
+    margin: 0;
+    /* margin-right: 108px; */
+    margin-left: 3cm;
+    margin-top: 1cm;
+}
+
+.one {
+    width: 680px;
+    grid-column: 1/6;
+    grid-row: 1/4;
+    /* background-color:aquamarine ; */
+    /* background: url("https://www.electronicbeats.net/app/uploads/sites/5/2020/09/Monolink_Credit-Ivanna-Capture-You_DSC0517.jpg"); */
+
+    border: 10px solid rgb(73, 77, 75);
+    justify-items: center;
+    /* margin-right: 15px; */
+    margin-left: 1cm;
+    border-radius: 5px;
+}
+
+
+
+.one>p {
+    /* background: rgb(7, 7, 7); */
+    color: rgb(10, 10, 10);
+    /* margin-left: 30px; */
+    margin-top: 6.5cm;
+    font-size: 70px;
+    font-style: bold;
+    font-weight: 800;
+    font-family: 'poppins', sans-serif;
+    padding-left: 1cm;
+    margin-left: 0cm;
+    margin-right: 3cm;
+    /* width: 40px; */
+}
+
+.caption {
+    font-size: 20px;
+}
+
+.two {
+    width: 330px;
+    height: fit-content;
+    grid-column: 6/8;
+    grid-row: 1/ 3;
+    background-color: rgba(255, 249, 249, 0.03);
+    /* column-gap: 3cm; */
+    /* margin-left: 10px; */
+    border-radius: 10px;
+    margin: 0;
+    margin-right: 5cm;
+    border: 1px solid rgb(48, 46, 46);
+    /* box-shadow: 0px 10px 10px 0px rgb(63, 61, 61,0.5); */
+}
+
+h1 {
+    color: rgb(29, 29, 28);
+    padding-left: 20px;
+    font-family: 'poppins', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+h2 {
+    color: rgb(77, 77, 75);
+    padding-left: 15px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+.placecity {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.locationicon,
+.dateicon {
+    font-size: 24px;
+}
+
+h3 {
+    color: rgb(184, 184, 159);
+    padding-left: 13px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+}
+
+h4 {
+    color: rgb(169, 101, 172);
+    padding-left: 13px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.clock {
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    margin-top: 16px;
+    margin-left: 0.4cm;
+    /* margin-top: 35px;   */
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.time1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    /* margin-top: 10px; */
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+.steps {
+    color: rgb(169, 101, 172);
+    font-size: 18px;
+    /* margin-top: 10px; */
+    margin-left: 0.5cm;
+    transform: rotate(-120deg);
+    margin-top: 12px;
+}
+
+.tickets {
+    width: 50%;
+    height: 35px;
+    background-image: linear-gradient(90deg, #564cb7, #6443af, #7039a6, #7a2e9d, #822092);
+    color: white;
+    margin-left: 2.4cm;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+}
+
+.tickets>a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.three {
+    width: 700px;
+    grid-column: 1/6;
+    grid-row: 4/17;
+    margin-left: 1.1cm;
+    /* border: 1px solid rgb(48, 46, 46); */
+    background-color: rgba(255, 249, 249, 0.03);
+}
+
+ul {
+    color: white;
+}
+
+.terms {
+    padding-left: 1cm;
+    padding-top: 1cm;
+    color: black;
+}
+
+li {
+    padding: 12px;
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+.about {
+    padding-left: 1cm;
+    padding-top: 1cm;
+}
+
+.p1 {
+    color: rgb(29, 28, 28);
+    padding-left: 1.5cm;
+    line-break: auto;
+    line-height: 1.6;
+    font-size: 16px;
+    width: 600px;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.four {
+    width: 330px;
+    grid-column: 6/8;
+    grid-row: 3/6;
+    margin-top: .5cm;
+    /* background-color:aquamarine; */
+    margin-right: 2cm;
+    border-radius: 5px;
+    border: 1px solid rgb(48, 46, 46);
+    background-color: #fff9f908;
+}
+
+hr {
+    background-color: rgb(51, 48, 48);
+    width: 80%;
+    height: 2px;
+    margin-left: 0.6cm;
+    margin-right: 1cm;
+    border: none;
+}
+
+.eg1,
+.eg3,
+.eg4,
+.eg5,
+.eg6,
+.eg2 {
+    color: rgb(36, 36, 36);
+    padding-left: 1cm;
+    line-height: 0.9;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+}
+
+.eg1 {
+    padding-top: 0.5cm;
+}
+
+.eg2,
+.eg4,
+.eg6 {
+    color: rgb(15, 15, 15);
+    padding-bottom: 0.3cm;
+
+}
+
+.location-icon {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+}

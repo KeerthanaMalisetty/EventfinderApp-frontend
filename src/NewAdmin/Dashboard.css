@@ -1,0 +1,29 @@
+.dashnav {
+    background-color: blueviolet;
+    position: relative;
+    display: flex;
+    height: 4rem;
+    flex-direction: row;
+}
+
+.header {
+    position: relative;
+}
+
+.dashhead {
+    position: relative;
+}
+
+
+.dashbody {
+    display: flex;
+    flex-direction: row;
+    height: 37rem;
+    /* overflow: hidden; */
+    background-color: white;
+
+}
+
+.dashmain {
+    background-color: whitesmoke;
+}

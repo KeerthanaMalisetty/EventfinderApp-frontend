@@ -1,0 +1,51 @@
+table {
+    background-color: white;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    color: rgb(10, 10, 10);
+    border-bottom: 1px solid white;
+    overflow: hidden;
+}
+
+
+
+tr {
+    border-bottom: 3px solid rgb(206, 100, 100);
+    height: 60px;
+    background-color: rgb(232, 235, 234);
+}
+
+th {
+    background-color: rgb(160, 112, 204);
+    color: aliceblue;
+    border: none;
+}
+
+td {
+    border: 0;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.bookingsbody {
+    display: flex;
+    flex-direction: row;
+}
+
+.bookingname {
+    width: 25rem;
+}
+
+.bookinguser,
+.bookingid {
+    width: 15rem;
+}
+
+.bookingcount {
+    width: 8rem;
+}
+
+.count {
+    padding-left: 3rem;
+}

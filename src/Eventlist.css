@@ -1,0 +1,11 @@
+.events-ctr {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 43px;
+  overflow: hidden;
+  margin: 0;
+  margin-left: 5rem;
+  margin-top: 10px;
+}

@@ -1,0 +1,41 @@
+.addeventform {
+    width: 50rem;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: bisque; */
+    gap: 20px;
+    margin-top: 5rem;
+    margin-left: 10rem;
+}
+
+.addeventbody {
+    background-color: white;
+}
+
+.inputtext {
+    width: 45%;
+    height: fit-content;
+    margin: 0;
+    border: none;
+    outline: none;
+
+    /* height: 65px; */
+    /* padding-left: 20px; */
+}
+
+.inputtextfield {
+    width: 43%;
+    /* margin-left: 10px; */
+
+}
+
+.addeventbutton {
+    width: 45%;
+    color: white;
+    height: 2.7rem;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+}

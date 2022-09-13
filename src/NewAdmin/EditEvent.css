@@ -1,0 +1,13 @@
+.adminform {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+    height: fit-content;
+    background-color: white;
+    margin: 10% auto;
+}
+
+.editfield {
+    width: 48%;
+}
