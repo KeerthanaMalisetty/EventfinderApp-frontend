@@ -114,7 +114,6 @@ function Editform({ event }) {
         fetch(`https://mernapp-eventfinder.herokuapp.com/admin/editevent/${event._id}`,
             {
                 method: "PUT",
-                mode: 'cors',
                 body: JSON.stringify(formValues),
                 headers: {
                     "Content-Type": "application/json",
