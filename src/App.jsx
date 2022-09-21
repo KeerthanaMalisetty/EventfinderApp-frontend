@@ -11,7 +11,7 @@ import { useState } from 'react';
 import { Profile } from './Profile'
 // import { Createevent } from './Createevent.jsx';
 import { Adminpage } from './NewAdmin/AdminHome.jsx'
-// import { Dashboard } from './NewAdmin/Dashboard.jsx'
+import { Dashboard } from './NewAdmin/Dashboard.jsx'
 import { Eventbookings } from './NewAdmin/Eventbookings'
 import { Userlist } from './NewAdmin/Userlist.jsx'
 import { Editevent } from './NewAdmin/EditEvent'
