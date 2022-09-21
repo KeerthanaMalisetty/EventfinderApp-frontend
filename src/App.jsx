@@ -11,7 +11,7 @@ import { useState } from 'react';
 import { Profile } from './Profile'
 // import { Createevent } from './Createevent.jsx';
 import { Adminpage } from './NewAdmin/AdminHome.jsx'
-import { Dashboard } from './NewAdmin/Dashboard.jsx'
+// import { Dashboard } from './NewAdmin/Dashboard.jsx'
 import { Eventbookings } from './NewAdmin/Eventbookings'
 import { Userlist } from './NewAdmin/Userlist.jsx'
 import { Editevent } from './NewAdmin/EditEvent'
@@ -20,10 +20,13 @@ import { Forgotpassword } from './Forgotpswd'
 import { PasswordChange } from './Passwordchange'
 import { Adminsignup } from './NewAdmin/adminsignup.jsx'
 import { Conformation } from './Conformation'
+
+// export const navbarname = createContext();
 function App() {
 
-  const [userid, setUserid] = useState("")
+  const [name, setName] = useState(null);
   return (
+    // <navbarname.Provider value={name, setName} >
     <div className='App'>
       <Routes>
         <Route path="/" element={<List />} />
@@ -47,6 +50,7 @@ function App() {
       </Routes>
 
     </div>
+    // </navbarname.Provider>
   );
 }
 

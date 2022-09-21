@@ -4,11 +4,16 @@ import { useFormik } from "formik";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
+// import {navbarname} from "./App"
+
 
 
 
 
 export function Login() {
+
+  // const{name, setName} = useContext(navbarname);
+
   const navigate = useNavigate();
   // const {logIn}=UserContext();
 
@@ -78,6 +83,7 @@ export function Login() {
           setMsg(data.msg)
         }
       }
+        // setName(data.name)
       )
 
 
@@ -118,6 +124,7 @@ export function Login() {
 
 
       <p className="loginheading">Login</p>
+      {/* {name} */}
 
       {msg ? <h4 className='invalidmsg'>{msg}</h4> : null}
 

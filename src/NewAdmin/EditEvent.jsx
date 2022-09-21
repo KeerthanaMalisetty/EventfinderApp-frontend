@@ -111,7 +111,7 @@ function Editform({ event }) {
         //3.in headres we should mention we r passing json data 
 
 
-        fetch(`https://mernapp-eventfinder.herokuapp.com/editevent/${event._id}`,
+        fetch(`https://mernapp-eventfinder.herokuapp.com/admin/editevent/${event._id}`,
             {
                 method: "PUT",
                 body: JSON.stringify(formValues),
