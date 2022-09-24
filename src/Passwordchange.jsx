@@ -31,7 +31,7 @@ export function PasswordChange() {
 
 
     const pswdchange = (pswd) => {
-        fetch("https://mernapp-eventfinder.herokuapp.com/changepassword",
+        fetch("${API}/changepassword",
             {
                 method: "POST",
                 body: JSON.stringify({ ...pswd, email: localStorage.getItem('useremail') }),

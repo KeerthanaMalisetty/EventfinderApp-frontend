@@ -10,7 +10,7 @@ export function Editevent() {
     const [event, setevent] = useState(null);
     const getevent = () => {
         fetch(
-            `https://mernapp-eventfinder.herokuapp.com/events/${id}`
+            `${API}/events/${id}`
         )
             .then((data) => data.json())
             .then((mv) => setevent(mv));
@@ -111,7 +111,7 @@ function Editform({ event }) {
         //3.in headres we should mention we r passing json data 
 
 
-        fetch(`https://mernapp-eventfinder.herokuapp.com/admin/editevent/${event._id}`,
+        fetch(`${API}/admin/editevent/${event._id}`,
             {
                 method: "PUT",
                 body: JSON.stringify(formValues),

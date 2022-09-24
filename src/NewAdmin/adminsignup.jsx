@@ -55,7 +55,7 @@ export function Adminnsignup() {
     //   const email=event.target.email.value;
     //   const password=event.target.password.value;
     //   const user ={name,email,age,password}
-    //   fetch('https://mernapp-eventfinder.herokuapp.com/login',{
+    //   fetch('${API}/login',{
     //     method: "POST",
     //     body : JSON.stringify(user),
     //     headers:{
@@ -70,7 +70,7 @@ export function Adminnsignup() {
 
     const register = (user) => {
 
-        fetch("https://mernapp-eventfinder.herokuapp.com/signup",
+        fetch("${API}/signup",
             {
                 method: "POST",
                 // body: JSON.stringify({ ...user, email: localStorage.getItem('useremail') }),

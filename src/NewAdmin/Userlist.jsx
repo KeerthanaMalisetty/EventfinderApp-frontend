@@ -24,7 +24,7 @@ export function Users() {
     const [users, setUsers] = useState([])
 
     const getusers = () => {
-        fetch(`https://mernapp-eventfinder.herokuapp.com/admin/users`)
+        fetch(`${API}/admin/users`)
             .then((data) => data.json())
             .then((mvs) => setUsers(mvs))
 

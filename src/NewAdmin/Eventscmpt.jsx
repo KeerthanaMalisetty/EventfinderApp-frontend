@@ -7,7 +7,7 @@ export function Maincomponent() {
     const [skip, setSkip] = useState(0);
     const [isEnd, setIsEnd] = useState(false);
     const getevents = (skip) => {
-        fetch(`https://mernapp-eventfinder.herokuapp.com/events?skip=${skip}`)
+        fetch(`${API}/events?skip=${skip}`)
             .then((data) =>
                 data.json()
                 // console.log(data.length)
@@ -26,7 +26,7 @@ export function Maincomponent() {
     const deleteevent = (id) => {
         // after delete we refresh the data
         fetch(
-            `https://mernapp-eventfinder.herokuapp.com/admin/delete/${id}`,
+            `${API}/admin/delete/${id}`,
             {
                 method: "DELETE"
             }

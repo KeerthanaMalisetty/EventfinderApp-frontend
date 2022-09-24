@@ -21,7 +21,7 @@ export function Eventbookings() {
 export function Bookings() {
     const [bookings, setBookings] = useState([])
     const getbookings = () => {
-        fetch(`https://mernapp-eventfinder.herokuapp.com/admin/eventbookings`)
+        fetch(`${API}/admin/eventbookings`)
             .then((data) => data.json())
             .then((mvs) => setBookings(mvs));
     }

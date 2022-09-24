@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
+import { API } from "./global";
 
 import './Signup.css'
 
@@ -44,7 +45,7 @@ export function Signup() {
   //   const email=event.target.email.value;
   //   const password=event.target.password.value;
   //   const user ={name,email,age,password}
-  //   fetch('https://mernapp-eventfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.com/login',{
+  //   fetch('${API}finder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.com/login',{
   //     method: "POST",
   //     body : JSON.stringify(user),
   //     headers:{
@@ -59,7 +60,7 @@ export function Signup() {
 
   const register = (user) => {
 
-    fetch("https://mernapp-eventfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.com/signup",
+    fetch(`${API}/signup`,
       {
         method: "POST",
         // body: JSON.stringify({ ...user, email: localStorage.getItem('useremail') }),

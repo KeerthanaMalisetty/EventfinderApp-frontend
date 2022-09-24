@@ -6,6 +6,7 @@ import './Eventlist.css'
 import './Categories.css'
 import './List.css'
 import { MusiceventCard } from "./MusiceventCard";
+import { API } from "./global";
 export function List() {
 
 
@@ -17,7 +18,7 @@ export function List() {
   const [random, setRandom] = useState(true);
 
   const getevents = (skip) => { // Pass in a callback function!
-    fetch(`https://mernapp-eventfinder.herokuapp.com/events?skip=${skip}`)
+    fetch(`${API}/events?skip=${skip}`)
       .then((data) => data.json())
       .then((mvs) => {
         if (mvs.msg) {
@@ -49,7 +50,7 @@ export function List() {
 
   const handleLocationChange = (loc) => {
     setLocation(loc)
-    fetch(`https://mernapp-eventfinder.herokuapp.com/events/${loc}`)
+    fetch(`${API}/events/${loc}`)
       .then((data) => data.json())
       .then((mvs) => {
         setEventslist(mvs);

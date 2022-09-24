@@ -6,6 +6,7 @@ import './Billing.css'
 import axios from "axios";
 import StripeCheckout from 'react-stripe-checkout';
 import { Ticketbooking } from "./Ticketbooking";
+import { API } from "./global";
 export function Billing() {
 
     const { id } = useParams();
@@ -13,7 +14,7 @@ export function Billing() {
     const [event, setevent] = useState({});
     const getevent = () => {
         fetch(
-            `https://mernapp-eventfinder.herokuapp.com/events/billing/${id}`,
+            `${API}/events/billing/${id}`,
             {
                 method: "GET",
             })
@@ -41,7 +42,7 @@ export function Billing() {
     const makeRequest = async () => {
         try {
             const res = await axios.post(
-                "https://mernapp-eventfinder.herokuapp.com/payment",
+                `${API}/payment`,
 
                 {
                     tokenId: stripeToken.id,
@@ -65,7 +66,7 @@ export function Billing() {
         const username = event.username;
         const eventname = event.name;
         const details = { bookingid, Toemail, username, eventname }
-        fetch('https://mernapp-eventfinder.herokuapp.com/sendmail', {
+        fetch('${API}/sendmail', {
             method: "POST",
             body: JSON.stringify(details),
             headers: {

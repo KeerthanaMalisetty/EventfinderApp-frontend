@@ -87,7 +87,7 @@ export function AddNewevent() {
 
 
     const register = (formValues) => {
-        fetch("https://mernapp-eventfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.com/admin/addevent",
+        fetch("${API}finder.herokuapp.comfinder.herokuapp.com/admin/addevent",
             {
                 method: "POST",
                 body: JSON.stringify(formValues),

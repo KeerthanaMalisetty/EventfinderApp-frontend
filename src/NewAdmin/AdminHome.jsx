@@ -55,7 +55,7 @@ export function Login() {
     //   const city=event.target.city.value;
     //   const password=event.target.password.value;
     //   const user ={name,city,age,password}
-    //   fetch('https://mernapp-eventfinder.herokuapp.com/login',{
+    //   fetch('${API}/login',{
     //     method: "POST",
     //     body : JSON.stringify(user),
     //     headers:{
@@ -70,7 +70,7 @@ export function Login() {
     const [info, setInfo] = useState({})
 
     const register = (user) => {
-        fetch("https://mernapp-eventfinder.herokuapp.com/login",
+        fetch("${API}/login",
             {
                 method: "POST",
                 body: JSON.stringify(user),

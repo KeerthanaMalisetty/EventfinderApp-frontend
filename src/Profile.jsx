@@ -60,7 +60,7 @@ export function Profile() {
   const [tab, setTab] = useState("bookings")
   const navigate = useNavigate();
   const getbookings = () => {
-    fetch(`https://mernapp-eventfinder.herokuapp.com/profile/bookings/${userid}`)
+    fetch(`${API}/profile/bookings/${userid}`)
       .then((data) => data.json())
       .then((mvs) => setBookings(mvs));
   }
@@ -68,7 +68,7 @@ export function Profile() {
     getbookings()
   }, [])
   const getevents = () => {
-    fetch(`https://mernapp-eventfinder.herokuapp.com/myevents/${username}`)
+    fetch(`${API}/myevents/${username}`)
       .then((data) => data.json())
       .then((mvs) => setEvents(mvs));
   }
@@ -82,7 +82,7 @@ export function Profile() {
   const [user, setuser] = useState("");
   const getuser = () => {
     fetch(
-      `https://mernapp-eventfinder.herokuapp.com/profile/user/${localStorage.userid}`
+      `${API}/profile/user/${localStorage.userid}`
     )
       .then((data) => data.json())
       .then((mv) => setuser(mv));

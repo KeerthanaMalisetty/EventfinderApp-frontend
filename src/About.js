@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Navbar } from './Navbar';
+import { API } from './global';
 
 export function About() {
 
@@ -12,7 +13,7 @@ export function About() {
 
     const getevent = () => {
         fetch(
-            `https://mernapp-eventfinder.herokuapp.com/events/${id}`,
+            `${API}/events/${id}`,
             {
                 method: "GET",
                 headers: {

@@ -2,13 +2,14 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import './conformation.css';
 import { Navbar } from "./Navbar";
+import { API } from "./global";
 export function Conformation() {
     const navigate = useNavigate();
     const { id } = useParams();
     const [event, setevent] = useState({});
     const getevent = () => {
         fetch(
-            `https://mernapp-eventfinder.herokuapp.com/billing/${id}`,
+            `${API}/billing/${id}`,
             {
                 method: "GET",
             })
@@ -23,7 +24,7 @@ export function Conformation() {
         const username = event.username;
         const eventname = event.name;
         const details = { bookingid, Toemail, username, eventname }
-        fetch('https://mernapp-eventfinder.herokuapp.com/sendmail', {
+        fetch('${API}/sendmail', {
             method: "POST",
             body: JSON.stringify(details),
             headers: {

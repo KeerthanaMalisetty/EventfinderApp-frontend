@@ -2,9 +2,7 @@ import './Login.css'
 import * as yup from "yup";
 import { useFormik } from "formik";
 import { useNavigate } from 'react-router-dom';
-
-
-
+import { API } from './global';
 
 
 export function Login() {
@@ -34,7 +32,7 @@ export function Login() {
 
 
   const register = (user) => {
-    fetch("https://mernapp-eventfinder.herokuapp.com/login",
+    fetch(`${API}/login`,
       {
         method: "POST",
         body: JSON.stringify(user),

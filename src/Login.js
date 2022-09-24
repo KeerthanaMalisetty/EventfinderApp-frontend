@@ -3,7 +3,7 @@ import * as yup from "yup";
 import { useFormik } from "formik";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-
+import { API } from './global';
 // import {navbarname} from "./App"
 
 
@@ -48,7 +48,7 @@ export function Login() {
   //   const city=event.target.city.value;
   //   const password=event.target.password.value;
   //   const user ={name,city,age,password}
-  //   fetch('https://mernapp-eventfinder.herokuapp.com/login',{
+  //   fetch('${API}/login',{
   //     method: "POST",
   //     body : JSON.stringify(user),
   //     headers:{
@@ -62,7 +62,7 @@ export function Login() {
   const [msg, setMsg] = useState(null);
 
   const register = (user) => {
-    fetch("https://mernapp-eventfinder.herokuapp.com/login",
+    fetch(`${API}/login`,
       {
         method: "POST",
         body: JSON.stringify(user),

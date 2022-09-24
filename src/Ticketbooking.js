@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { margin } from '@mui/system';
+import { API } from './global';
 
 export function Ticketbooking() {
 
@@ -11,7 +12,7 @@ export function Ticketbooking() {
   const [eventinfo, setEventinfo] = useState({});
   const geteventinfo = () => {
     fetch(
-      `https://mernapp-eventfinder.herokuapp.com/events/${id}`,
+      `${API}/events/${id}`,
       {
         method: "GET",
       })
@@ -64,7 +65,7 @@ export function Ticketbooking() {
     const useremail = localStorage.useremail;
     console.log(eventinfo);
     const bookings = { name, city, place, ticketcount, userid, id, ticketprice, date, username, useremail }
-    fetch('https://mernapp-eventfinder.herokuapp.com/events/bookings', {
+    fetch(`${API}/events/bookings`, {
       method: "POST",
       body: JSON.stringify(bookings),
       headers: {
@@ -120,20 +121,6 @@ export function Ticketbooking() {
 
         {add == 10 ? <p className='war'>Reached maximum limit 10</p> : ""}
       </div>
-
-
-      {/* <hr className="hr" /> */}
-      {/* <div className="qty1">
-        <h1 className="bookingTname">Group Ticket<span>(5 tickets)</span>   </h1>
-        <div className="bookingctr2">
-          <button className="qty2" onClick={rate}>-</button>
-          <button className="qty3">{price}</button>
-          <button className="qty4" onClick={price1}>+</button>
-        </div>
-      </div>
-      {/* <h1 className="caption">(group of 5) </h1> */}
-      {/* <p className="price">Rs.{price * 3500}</p>
-      <hr className="booking-hr" />  */}
 
       <button type="submit" className="button"
         onClick={handlesubmit}> Book Now</button>

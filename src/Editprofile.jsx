@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { useNavigate, useParams } from "react-router-dom";
 import './Editprofile.css'
+import { API } from "./global";
 // export function Edituser() {
 
 
@@ -46,7 +47,7 @@ export function EditProfile({ user, setTab }) {
         //3.in headres we should mention we r passing json data 
 
 
-        fetch(`https://mernapp-eventfinder.herokuapp.com/profile/edituser/${localStorage.userid}`,
+        fetch(`${API}/profile/edituser/${localStorage.userid}`,
             {
                 method: "PUT",
                 body: JSON.stringify(updateuser),

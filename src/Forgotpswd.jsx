@@ -3,6 +3,7 @@ import * as yup from "yup";
 import { useFormik } from "formik";
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { API } from './global';
 
 
 
@@ -30,7 +31,7 @@ export function Forgotpassword() {
     const basicSchema = yup.object().shape({
 
         email: yup.string().required("Please enter your email")
-        // .min(8, "Password should length should be 8")
+
 
     })
 
@@ -42,7 +43,7 @@ export function Forgotpassword() {
     //   const city=event.target.city.value;
     //   const password=event.target.password.value;
     //   const user ={name,city,age,password}
-    //   fetch('https://mernapp-eventfinder.herokuapp.com/login',{
+    //   fetch('${API}/login',{
     //     method: "POST",
     //     body : JSON.stringify(user),
     //     headers:{
@@ -57,7 +58,7 @@ export function Forgotpassword() {
     const [info, setInfo] = useState({})
 
     const register = (user) => {
-        fetch("https://mernapp-eventfinder.herokuapp.com/forgotpassword",
+        fetch(`${API}/forgotpassword`,
             {
                 method: "POST",
                 body: JSON.stringify(user),
