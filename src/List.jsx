@@ -53,6 +53,9 @@ export function List() {
     fetch(`${API}/events/${loc}`,
       {
         method: "GET",
+        headers: {
+          'accept': 'application/json'
+        }
       })
       .then((data) => data.json())
       .then((mvs) => {
