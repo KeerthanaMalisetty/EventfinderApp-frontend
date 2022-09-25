@@ -50,7 +50,10 @@ export function List() {
 
   const handleLocationChange = (loc) => {
     setLocation(loc)
-    fetch(`${API}/events/${loc}`)
+    fetch(`${API}/events/${loc}`,
+      {
+        method: "GET",
+      })
       .then((data) => data.json())
       .then((mvs) => {
         setEventslist(mvs);
