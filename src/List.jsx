@@ -54,7 +54,7 @@ export function List() {
       {
         method: "GET",
         headers: {
-          'accept': 'application/json'
+          'Content-Type': 'application/json'
         }
       })
       .then((data) => data.json())
