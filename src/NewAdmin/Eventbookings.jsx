@@ -3,6 +3,7 @@ import { Sidebar } from './Sidebar'
 import { useState, useNavigate } from 'react'
 import { useEffect } from 'react'
 import './Eventbookings.css'
+import { API } from "../global";
 export function Eventbookings() {
     return (
         <div className='dashmain'>

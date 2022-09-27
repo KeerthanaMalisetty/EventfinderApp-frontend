@@ -5,6 +5,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AdminNavbar } from './AdminNavbar'
 import { Sidebar } from './Sidebar'
 import './Addnew.css';
+import { API } from "../global";
+
 export function Editevent() {
     const { id } = useParams();
     const [event, setevent] = useState(null);

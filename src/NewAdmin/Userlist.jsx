@@ -3,7 +3,7 @@ import { Sidebar } from './Sidebar'
 import { useState, useNavigate } from 'react'
 import { useEffect } from 'react'
 import './Userlist.css'
-
+import { API } from "../global";
 
 export function Userlist() {
     return (

@@ -2,6 +2,8 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { Navigate, useNavigate } from "react-router-dom"
 import './Eventscmpt.css'
+import { API } from "../global";
+
 export function Maincomponent() {
     const [events, setEvents] = useState([])
     const [skip, setSkip] = useState(0);
