@@ -54,8 +54,15 @@ export function List() {
       {
         method: "GET",
         headers: {
-          'Content-Type': 'application/json'
-        }
+          Accept: "appllication/json",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods":
+            "DELETE, POST, GET, OPTIONS",
+          "Access-Control-Allow-Headers":
+            "Content-Type, Authorization, X-Requested-With",
+        },
+        credentials: "include",
       })
       .then((data) => data.json())
       .then((mvs) => {
