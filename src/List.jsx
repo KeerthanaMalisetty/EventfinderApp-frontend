@@ -7,9 +7,10 @@ import './Categories.css'
 import './List.css'
 import { MusiceventCard } from "./MusiceventCard";
 import { API } from "./global";
+import axios from "axios";
+
+
 export function List() {
-
-
   const [skip, setSkip] = useState(0);
   const [eventslist, setEventslist] = useState([]);
   const [showEventList, setShowEventList] = useState([]);
@@ -34,40 +35,42 @@ export function List() {
 
   }
 
-  const handleScroll = () => {
-    console.log("height:", document.documentElement.scrollHeight)
-    console.log("top:", document.documentElement.scrollTop);
-  }
 
 
   useEffect(() => {
     getevents(skip)
   }, [skip])
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, [])
+  //  const handleLocationChange = (location) => { // Pass in a callback function!
+  //   fetch(`${API}/events/${location}`)
+  //     .then((data) => data.json())
+  //     .then((mvs) => {
+  //       setEventslist(mvs);
+  //       setShowEventList(mvs);
+  //     });
+  // }
 
-  const handleLocationChange = (loc) => {
+  const handleLocationChange = async (loc) => {
+
+    const data = { city: loc };
+
     setLocation(loc)
-    fetch(`${API}/events/${loc}`,
-      {
-        method: "GET",
-        headers: {
-          // Accept: "appllication/json",
-          "content-type": "application/json"
-          // "Access-Control-Allow-Origin": "*",
-          // "Access-Control-Allow-Methods":
-          //   "DELETE, POST, GET, OPTIONS",
-          // "Access-Control-Allow-Headers":
-          //   "Content-Type, Authorization, X-Requested-With",
-        },
-        // credentials: "include",
-      })
-      .then((data) => data.json())
+    // fetch(`${API}/events/city`,
+    //   {
+    //     method: "POST",
+    //     body: JSON.stringify(loc),
+    //     headers: {
+    //       Accept: "application/json",  
+    //     }
+
+    //   })
+    //  
+    await axios.post(`${API}/events/city`, data)
+
       .then((mvs) => {
-        setEventslist(mvs);
-        setShowEventList(mvs);
+        setEventslist(mvs.data);
+        console.log(mvs);
+        setShowEventList(mvs.data);
       });
   }
 

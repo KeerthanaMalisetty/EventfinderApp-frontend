@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import './Addnew.css';
 import { useState } from "react";
+import { API } from "../global";
 // import FileBase from 'react-file-base64';
 // import ChipInput 
 export function Newevent() {
@@ -87,7 +88,7 @@ export function AddNewevent() {
 
 
     const register = (formValues) => {
-        fetch("${API}finder.herokuapp.comfinder.herokuapp.com/admin/addevent",
+        fetch(`${API}/admin/addevent`,
             {
                 method: "POST",
                 body: JSON.stringify(formValues),

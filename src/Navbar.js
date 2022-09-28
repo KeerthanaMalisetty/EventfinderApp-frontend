@@ -34,7 +34,7 @@ export function Navbar({ handleLocationChange }) {
       <select className='Dropdown' onChange={(e) => {
         handleLocationChange(e.target.value);
       }}>
-        <option className="Options" value="">Location</option>
+        <option className="Options" value="Location">Location</option>
         <option className="Options" value="Bangalore">Banglore</option>
         <option className="Options" value="Hyderabad">Hyderabad</option>
         <option className="Options" value="Mumbai">Mumbai</option>
