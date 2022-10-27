@@ -46,7 +46,7 @@ export function Navbar({ handleLocationChange }) {
 
       {/* const user = JSON.parse(localStorage.getItem("currentUser")); */}
       <ul className='buttons'>
-        <li> <button className='createevent' onClick={click}> Createevent </button></li>
+        {/* <li> <button className='createevent' onClick={click}> Createevent </button></li> */}
 
         <li>
           {name ? <button className='login' onClick={() => navigate("/user/profile")}><i className="fa-regular fa-user  navuser"></i>{localStorage.username}</button> : <button className='login' onClick={() => navigate("/login")}>Login</button>}

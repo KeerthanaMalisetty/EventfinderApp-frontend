@@ -45,7 +45,7 @@ export function Signup() {
   //   const email=event.target.email.value;
   //   const password=event.target.password.value;
   //   const user ={name,email,age,password}
-  //   fetch('${API}finder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.comfinder.herokuapp.com/login',{
+  //   fetch('${API}',{
   //     method: "POST",
   //     body : JSON.stringify(user),
   //     headers:{
